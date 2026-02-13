@@ -1,0 +1,156 @@
+# Experiment Configuration
+# Comprehensive training settings for VisDrone object detection
+
+# ============================================================
+# EXPERIMENT METADATA
+# ============================================================
+experiment:
+  name: "yolov8_visdrone_baseline"
+  description: "YOLOv8 baseline for VisDrone object detection"
+  author: "Your Name"
+  date: "2026-02-13"
+  goal: "Beat MATLAB baseline of 7.23% mAP@0.5"
+
+# ============================================================
+# REPRODUCIBILITY
+# ============================================================
+seed: 42
+deterministic: true
+
+# ============================================================
+# MODEL CONFIGURATION
+# ============================================================
+model:
+  # Model size: yolov8n, yolov8s, yolov8m, yolov8l, yolov8x
+  # Start with 'n' for quick validation, then 's' for baseline
+  name: "yolov8n"
+  pretrained: true
+  
+# ============================================================
+# DATASET
+# ============================================================
+data:
+  yaml_path: "configs/visdrone.yaml"
+  workers: 4
+  cache: false  # Set true if enough RAM (caches images)
+  
+# ============================================================
+# TRAINING HYPERPARAMETERS
+# ============================================================
+training:
+  # Image settings
+  imgsz: 640  # Input image size (640 for speed, 800 for small objects)
+  
+  # Batch settings
+  batch: 4  # Batch size for RTX 3060 @ 640px
+  
+  # Training duration
+  epochs: 50
+  patience: 10  # Early stopping patience
+  
+  # Device
+  device: 0  # GPU 0
+  
+  # Performance
+  amp: true  # Automatic Mixed Precision (faster)
+  
+  # Checkpointing
+  save: true
+  save_period: -1  # Save checkpoint every N epochs (-1 = only last)
+  
+# ============================================================
+# OPTIMIZER & LEARNING RATE
+# ============================================================
+optimizer:
+  # YOLOv8 uses SGD by default, but we can override if needed
+  name: "auto"  # Let YOLOv8 use defaults
+  lr0: 0.01     # Initial learning rate (SGD default)
+  lrf: 0.01     # Final learning rate factor (lr0 * lrf)
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+
+# ============================================================
+# AUGMENTATION
+# ============================================================
+augmentation:
+  # Geometric
+  hsv_h: 0.015      # HSV-Hue augmentation
+  hsv_s: 0.7        # HSV-Saturation
+  hsv_v: 0.4        # HSV-Value
+  degrees: 0.0      # Image rotation (+/- deg)
+  translate: 0.1    # Image translation (+/- fraction)
+  scale: 0.5        # Image scale (+/- gain)
+  shear: 0.0        # Image shear (+/- deg)
+  perspective: 0.0  # Image perspective (+/- fraction)
+  flipud: 0.0       # Vertical flip probability
+  fliplr: 0.5       # Horizontal flip probability
+  
+  # Advanced augmentations for small objects
+  mosaic: 1.0       # Mosaic augmentation (critical for small objects)
+  mixup: 0.0        # Mixup augmentation (start with 0, can increase)
+  copy_paste: 0.0   # Copy-paste augmentation (can add later)
+  
+# ============================================================
+# LOSS FUNCTION
+# ============================================================
+loss:
+  # YOLOv8 uses default loss, but we can adjust weights
+  box: 7.5          # Box loss weight
+  cls: 0.5          # Class loss weight
+  dfl: 1.5          # Distribution focal loss weight
+  
+# ============================================================
+# INFERENCE & EVALUATION
+# ============================================================
+inference:
+  conf: 0.001       # Confidence threshold (very low for small objects)
+  iou: 0.7          # NMS IoU threshold
+  max_det: 500      # Maximum detections per image (avg 46 objects/image)
+  
+evaluation:
+  # Evaluation happens automatically during training
+  # Reports mAP@0.5, mAP@0.5:0.95, etc.
+  plots: true       # Generate plots (confusion matrix, PR curve, etc.)
+  
+# ============================================================
+# LOGGING & OUTPUT
+# ============================================================
+logging:
+  # Output directory structure
+  project: "runs/detect"
+  name: "experiment"
+  exist_ok: false   # Don't overwrite existing runs
+  
+  # Visualization
+  verbose: true
+  plots: true
+  save_json: true   # Save results as JSON
+  save_txt: false   # Save labels for each image
+  save_conf: false  # Save confidences in labels
+  save_crop: false  # Save cropped prediction boxes
+  
+  # TensorBoard / WandB
+  tensorboard: true
+  wandb: false      # Enable Weights & Biases if account setup
+  
+# ============================================================
+# DATA FILTERING (for annotation conversion)
+# ============================================================
+data_filtering:
+  filter_ignored: true      # Filter score=0 (ignored regions)
+  filter_occluded: false    # Keep occluded objects
+  filter_truncated: false   # Keep truncated objects
+  min_box_area: 4           # Minimum box area in pixels
+  min_dimension: 2          # Minimum width or height
+
+# ============================================================
+# DATASET SPLIT
+# ============================================================
+split:
+  train_ratio: 0.8
+  val_ratio: 0.2
+  shuffle: true
+  stratified: false  # Can enable for class-balanced splits
