@@ -110,9 +110,9 @@ python scripts/compile_videos.py --demo-dir "runs/detect/runs/videos/demo_TIMEST
 **Resolution:** 384×384 pixels  
 **Hardware:** RTX 3060 Laptop GPU (6GB VRAM)
 
-| Metric | Training Best | Evaluation |
-|--------|--------------|------------|
-| mAP@0.5 | 23.7% | **28.1%** |
+| Metric | Training Best (epoch) | Final evaluation (val set) |
+|--------|----------------------|---------------------------|
+| mAP@0.5 | 23.7% (epoch 63) | **28.1%** (conf=0.001, validation) |
 | mAP@0.5:0.95 | 12.6% | 16.1% |
 | Precision | - | 33.7% |
 | Recall | - | 31.0% |
@@ -138,13 +138,13 @@ python scripts/compile_videos.py --demo-dir "runs/detect/runs/videos/demo_TIMEST
 
 Different operating points trade precision for recall:
 
-| Threshold | mAP@0.5* | Precision | Recall | Use Case |
-|-----------|----------|-----------|--------|----------|
-| 0.001 | 28.1% | 33.7% | 31.0% | Evaluation baseline |
-| 0.3 | 35.7% | 45.6% | 24.4% | Balanced deployment |
-| 0.5 | 40.3% | 61.6% | 18.4% | High-precision mode |
+| Threshold | Precision | Recall | Use Case |
+|-----------|-----------|--------|----------|
+| 0.001 | 33.7% | 31.0% | Evaluation baseline (report true mAP = 28.1%) |
+| 0.3 | 45.6% | 24.4% | Balanced deployment |
+| 0.5 | 61.6% | 18.4% | High-precision mode (lower recall) |
 
-*Note: mAP values at conf > 0.001 are threshold-filtered metrics, not true model performance*
+Note: True model performance is **mAP@0.5 = 28.1%** (evaluation on the validation set). Changing the confidence threshold selects an operating point on the precision–recall curve and does not change the model's intrinsic mAP.
 
 ### Demo Videos
 
