@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# YOLOv8 — VisDrone Detection (Canonical README)
+# YOLOv8(PyTorch) — VisDrone Object Detection
 
 One-line: Reproducible YOLOv8 detection pipeline for the VisDrone 2019 dataset — training, evaluation, and demo video generation.
 
@@ -71,7 +70,7 @@ Second Project/
 │   ├── 03_prepare_dataset.py      # Create train/val split
 │   ├── 04_train.py                # Train YOLOv8
 │   ├── 05_evaluate.py             # Evaluate and compare
-│   ├── 06_video_inference.py      # Video sequence inference
+│   └── 06_video_inference.py      # Video sequence inference
 ├── Annotations/_train/            # Original VisDrone annotations
 ├── images1/images/                # Original images (1610 files)
 ├── dataset/                       # Processed YOLO format dataset
@@ -127,8 +126,6 @@ python scripts/06_video_inference.py --video VisDrone2019-VID-val/sequences/uav0
 ```
 
 ---
-
-## Canonical experiment (this README is written around this run)
 
 - Experiment name: `yolov8s_20260224_1745502`
 - Weights: `runs/detect/yolov8s_20260224_1745502/weights/best.pt`
@@ -195,17 +192,6 @@ python scripts/05_evaluate.py --weights runs/detect/yolov8s_20260224_1745502/wei
 
 python scripts/06_video_inference.py --video VisDrone2019-VID-val/sequences/uav0000137_00458_v --weights runs/detect/yolov8s_20260224_1745502/weights/best.pt --conf 0.3 --save
 ```
-
----
-
-## Artifacts & what NOT to commit
-
-- Do NOT commit:
-  - Large model files (`*.pt`, `*.pth`) — use Git LFS, DVC, S3, or GitHub Releases.
-  - Full datasets and image folders (e.g., `images1/`, `VisDrone2019-*`) — provide download instructions instead.
-  - Runtime outputs: `runs/`, `logs/`, `backups/`.
-
-- Recommended: commit small manifests that point to artifacts (e.g., `configs/last_experiment_args.yaml`, `DIRECTORY_RECORD_SUMMARY.json`) and an `artifacts/weights_manifest.json` with checksums/URLs for large weights.
 
 ---
 
