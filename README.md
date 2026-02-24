@@ -47,12 +47,6 @@ Real-time object detection pipeline for aerial imagery using YOLOv8 on the VisDr
 
 Successfully trained and deployed YOLOv8s for detecting 10 object classes in dense aerial imagery. The project demonstrates end-to-end pipeline development from data conversion to video inference, with emphasis on handling extreme small-object detection challenges under hardware constraints.
 
-**Key Achievements:**
-- 📈 28.1% mAP@0.5 (vs 7.23% MATLAB baseline)
-- 🎥 Generated 7 annotated demo videos from validation sequences
-- ⚡ Optimized for 6GB VRAM laptop GPU (RTX 3060)
-- 🔬 Systematic precision-recall trade-off analysis
-
 ---
 
 ## 📁 Project Structure
@@ -78,7 +72,6 @@ Second Project/
 │   ├── 04_train.py                # Train YOLOv8
 │   ├── 05_evaluate.py             # Evaluate and compare
 │   ├── 06_video_inference.py      # Video sequence inference
-│   └── compile_videos.py          # Frame-to-video compilation
 ├── Annotations/_train/            # Original VisDrone annotations
 ├── images1/images/                # Original images (1610 files)
 ├── dataset/                       # Processed YOLO format dataset
@@ -87,7 +80,6 @@ Second Project/
 │   ├── labels/train/              # Training annotations
 │   └── labels/val/                # Validation annotations
 ├── runs/detect/                   # Training outputs
-│   ├── yolov8s_20260213_185302/   # Best model checkpoint
 │   └── runs/videos/               # Demo videos
 ├── VisDrone2019-VID-val/          # Video sequences for inference
 ├── requirements.txt
