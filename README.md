@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # YOLOv8 — VisDrone Detection (Canonical README)
 
 One-line: Reproducible YOLOv8 detection pipeline for the VisDrone 2019 dataset — training, evaluation, and demo video generation.
@@ -31,6 +32,99 @@ Run the three main steps (copy/paste):
 
 ```powershell
 # Train (example)
+=======
+# VisDrone Object Detection with YOLOv8
+
+Real-time object detection pipeline for aerial imagery using YOLOv8 on the VisDrone 2019 dataset.
+
+**Project Status:** ✅ Complete  
+**Achieved:** **36.2% mAP@0.5**
+**Model:** YOLOv8s (11.1M parameters)
+
+---
+
+## 🎯 Project Summary
+
+Successfully trained and deployed YOLOv8s for detecting 10 object classes in dense aerial imagery. The project demonstrates end-to-end pipeline development from data conversion to video inference, with emphasis on handling extreme small-object detection challenges under hardware constraints.
+
+**Key Achievements:**
+- 📈 28.1% mAP@0.5 (vs 7.23% MATLAB baseline)
+- 🎥 Generated 7 annotated demo videos from validation sequences
+- ⚡ Optimized for 6GB VRAM laptop GPU (RTX 3060)
+- 🔬 Systematic precision-recall trade-off analysis
+
+---
+
+## 📁 Project Structure
+
+```
+Second Project/
+├── configs/
+│   ├── visdrone.yaml              # YOLOv8 dataset config
+│   └── experiment_config.yaml     # Training hyperparameters
+├── src/
+│   ├── data/
+│   │   ├── convert.py             # VisDrone → YOLO conversion
+│   │   └── __init__.py
+│   └── utils/
+│       ├── logging.py             # Experiment logging
+│       ├── reproducibility.py     # Seed management
+│       ├── visualization.py       # Plotting utilities
+│       └── __init__.py
+├── scripts/
+│   ├── 01_convert_annotations.py  # Convert VisDrone to YOLO format
+│   ├── 02_verify_data.py          # Visual verification
+│   ├── 03_prepare_dataset.py      # Create train/val split
+│   ├── 04_train.py                # Train YOLOv8
+│   ├── 05_evaluate.py             # Evaluate and compare
+│   ├── 06_video_inference.py      # Video sequence inference
+│   └── compile_videos.py          # Frame-to-video compilation
+├── Annotations/_train/            # Original VisDrone annotations
+├── images1/images/                # Original images (1610 files)
+├── dataset/                       # Processed YOLO format dataset
+│   ├── images/train/              # 1288 training images
+│   ├── images/val/                # 322 validation images
+│   ├── labels/train/              # Training annotations
+│   └── labels/val/                # Validation annotations
+├── runs/detect/                   # Training outputs
+│   ├── yolov8s_20260213_185302/   # Best model checkpoint
+│   └── runs/videos/               # Demo videos
+├── VisDrone2019-VID-val/          # Video sequences for inference
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install Dependencies
+
+```bash
+# Activate your conda environment
+conda activate cv310
+
+# Install requirements
+pip install -r requirements.txt
+```
+
+### 2. Run Pipeline
+
+Execute scripts in order:
+
+```bash
+# Step 1: Convert annotations (VisDrone → YOLO format)
+python scripts/01_convert_annotations.py
+
+# Step 2: Verify conversion visually
+python scripts/02_verify_data.py
+
+# Step 3: Prepare dataset (train/val split + file organization)
+python scripts/03_prepare_dataset.py
+
+# Step 4: Train YOLOv8 model
+>>>>>>> origin/main
 python scripts/04_train.py
 
 # Evaluate canonical model (conf=0.001)
