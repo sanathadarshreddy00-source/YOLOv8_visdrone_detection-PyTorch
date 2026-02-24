@@ -3,7 +3,7 @@
 Real-time object detection pipeline for aerial imagery using YOLOv8 on the VisDrone 2019 dataset.
 
 **Project Status:** ✅ Complete  
-**Achieved:** **28.1% mAP@0.5** (3.9× baseline improvement)  
+**Achieved:** **36.2% mAP@0.5**
 **Model:** YOLOv8s (11.1M parameters)
 
 ---
