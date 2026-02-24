@@ -1,34 +1,3 @@
-# Second Project — VisDrone YOLOv8 Pipeline
-
-Concise quickstart and developer notes for the VisDrone YOLOv8 pipeline (training, evaluation, and demo generation).
-
-Quickstart
-- Create / activate environment (example):
-
-```powershell
-conda activate cv310
-```
-
-- Run scripts from project root. If Python can't import `src`, set `PYTHONPATH` to the project root before running scripts:
-
-```powershell
-$env:PYTHONPATH = "$(Get-Location)"
-python scripts/04_train.py    # train (example)
-python scripts/05_evaluate.py --conf 0.001
-python scripts/06_video_inference.py --video VisDrone2019-VID-val/sequences/uav0000137_00458_v --weights runs/detect/<experiment>/weights/best.pt --conf 0.3
-```
-
-Key files and locations
-- `configs/paths.yaml`: centralized canonical paths used by scripts.
-- `src/utils/paths.py`: path loader exposing `VIDEOS`, `RUNS_PROJECT`, `PREDICTIONS`, `DATASET`, etc.
-- Outputs: canonical location is `runs/detect/` (predictions, videos, verification).
-- Inventory tools: `tools/generate_directory_record.py` writes `DIRECTORY_RECORD_FULL.csv`/`.json`.
-
-Notes
-- Keep `configs/paths.yaml` authoritative; avoid committing local `.bak` files.
-- If you need reproducible environments, create a `requirements.txt` or `environment.yml` (I can generate one from your env).
-
-If you want, I can add a pinned `requirements.txt`, a minimal CI workflow, or make the project installable (`pip install -e .`).
 # VisDrone Object Detection with YOLOv8
 
 Real-time object detection pipeline for aerial imagery using YOLOv8 on the VisDrone 2019 dataset.
