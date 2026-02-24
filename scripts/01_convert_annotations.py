@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.data.convert import VisDroneConverter
 from src.utils.logging import setup_logger
 from src.utils.reproducibility import set_seed
+from src.utils import paths
 
 
 def main():
@@ -37,10 +38,10 @@ def main():
     logger = setup_logger('convert', 'logs')
     logger.info("Starting annotation conversion...")
     
-    # Paths
-    annotations_dir = Path("Annotations/_train")
-    images_dir = Path("images1/images")
-    output_dir = Path("labels_converted")
+    # Paths (centralized)
+    annotations_dir = paths.ANNOTATIONS
+    images_dir = paths.IMAGES
+    output_dir = paths.LABELS
     
     # Validate paths
     if not annotations_dir.exists():

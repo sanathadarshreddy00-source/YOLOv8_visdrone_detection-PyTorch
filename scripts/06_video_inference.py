@@ -19,6 +19,7 @@ from datetime import datetime
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.utils.reproducibility import set_seed
+from src.utils import paths
 
 # Import YOLOv8
 try:
@@ -52,13 +53,36 @@ def main(args):
     # Set seed
     set_seed(config['seed'])
     
-    # Weights path
+    # Weights path: prefer user-provided, otherwise locate latest under configured runs project
     if args.weights:
         weights_path = Path(args.weights)
     else:
-        # Use the latest trained model
-        weights_path = Path("runs/detect/runs/detect/yolov8s_20260213_185302/weights/best.pt")
-    
+        runs_root = paths.RUNS_PROJECT
+        if not isinstance(runs_root, Path):
+            runs_root = Path(runs_root)
+
+        weights_path = None
+        if runs_root.exists():
+            candidate_runs = [d for d in runs_root.iterdir() if d.is_dir()]
+            if candidate_runs:
+                latest = max(candidate_runs, key=lambda d: d.stat().st_mtime)
+                candidate_weights = latest / 'weights'
+                best = candidate_weights / 'best.pt'
+                last = candidate_weights / 'last.pt'
+                if best.exists():
+                    weights_path = best
+                elif last.exists():
+                    weights_path = last
+                else:
+                    pts = list(candidate_weights.glob('*.pt')) if candidate_weights.exists() else []
+                    weights_path = pts[0] if pts else None
+
+        # If not found under runs project, fall back to provided path or report error
+        if weights_path is None:
+            print("ERROR: Could not auto-locate weights under runs project.")
+            print("Please provide weights with --weights argument")
+            return
+
     if not weights_path.exists():
         print(f"ERROR: Weights not found: {weights_path}")
         print("\nPlease provide weights with --weights argument")
@@ -92,8 +116,8 @@ def main(args):
     
     # Output directory
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_dir = Path("runs/videos") / f"demo_{timestamp}"
-    output_dir.mkdir(parents=True, exist_ok=True)
+    output_dir = paths.VIDEOS / f"demo_{timestamp}"
+    paths.ensure_dirs(output_dir)
     
     print(f"\nOutput directory: {output_dir}")
     print("="*70)
@@ -105,32 +129,37 @@ def main(args):
         process_video(model, video_source, output_dir, conf_threshold, args)
     elif video_source.is_dir():
         # Directory of videos or image sequences
-        video_files = list(video_source.glob("*.mp4")) + \
-                     list(video_source.glob("*.avi")) + \
-                     list(video_source.glob("*.mov"))
-        
-        # Also check for VisDrone sequences (folders with images)
-        sequence_folders = [d for d in video_source.iterdir() if d.is_dir()]
-        
-        if video_files:
-            print(f"\nFound {len(video_files)} video files")
-            for video_file in video_files:
-                print(f"\n{'='*70}")
-                print(f"Processing: {video_file.name}")
-                print('='*70)
-                process_video(model, video_file, output_dir, conf_threshold, args)
-        
-        if sequence_folders:
-            print(f"\nFound {len(sequence_folders)} sequence folders")
-            for seq_folder in sequence_folders:
-                print(f"\n{'='*70}")
-                print(f"Processing sequence: {seq_folder.name}")
-                print('='*70)
-                process_sequence(model, seq_folder, output_dir, conf_threshold, args)
-        
-        if not video_files and not sequence_folders:
-            print(f"ERROR: No videos or sequences found in {video_source}")
-            return
+        # If the directory itself contains images, treat it as a sequence
+        images_in_dir = sorted(list(video_source.glob("*.jpg")) + list(video_source.glob("*.png")))
+        if images_in_dir:
+            print(f"\nDetected image sequence in directory: {video_source.name} ({len(images_in_dir)} frames)")
+            process_sequence(model, video_source, output_dir, conf_threshold, args)
+        else:
+            video_files = list(video_source.glob("*.mp4")) + \
+                         list(video_source.glob("*.avi")) + \
+                         list(video_source.glob("*.mov"))
+            
+            # Also check for VisDrone sequences (folders with images)
+            sequence_folders = [d for d in video_source.iterdir() if d.is_dir()]
+
+            if video_files:
+                print(f"\nFound {len(video_files)} video files")
+                for video_file in video_files:
+                    print(f"\n{'='*70}")
+                    print(f"Processing: {video_file.name}")
+                    print('='*70)
+                    process_video(model, video_file, output_dir, conf_threshold, args)
+            
+            if sequence_folders:
+                print(f"\nFound {len(sequence_folders)} sequence folders")
+                for seq_folder in sequence_folders:
+                    print(f"Processing sequence: {seq_folder.name}")
+                    print('='*70)
+                    process_sequence(model, seq_folder, output_dir, conf_threshold, args)
+            
+            if not video_files and not sequence_folders:
+                print(f"ERROR: No videos or sequences found in {video_source}")
+                return
     else:
         print(f"ERROR: Invalid video source: {video_source}")
         return
@@ -191,14 +220,12 @@ def process_sequence(model, seq_folder, output_dir, conf_threshold, args):
         max_det=500,
         save=args.save,
         show=args.show,
-        project=str(output_dir.parent),
-        name=output_dir.name + "/" + seq_folder.name,
+        project=str(output_dir),  # Use output_dir directly
+        name=seq_folder.name,     # Use sequence folder name for subdir
         exist_ok=True,
         stream=True,
         verbose=False  # Less verbose for sequences
     )
-    
-    # Process results
     frame_count = 0
     for result in results:
         frame_count += 1
@@ -207,53 +234,42 @@ def process_sequence(model, seq_folder, output_dir, conf_threshold, args):
     
     print(f"✓ Processed {frame_count} frames from {seq_folder.name}")
     
-    # Compile frames into video
+    # Compile frames into video using robust logic from compile_videos.py
     if args.save:
         print(f"  Compiling frames into video...")
-        video_path = compile_frames_to_video(
-            output_dir / seq_folder.name,
-            seq_folder.name,
-            fps=args.fps
-        )
-        if video_path:
+        frames_dir = output_dir / seq_folder.name
+        video_path = output_dir / f"{seq_folder.name}.mp4"
+        success = compile_frames_to_video(frames_dir, video_path, fps=args.fps)
+        if success:
             print(f"✓ Video saved: {video_path.name}")
 
 
 def compile_frames_to_video(frames_dir, video_name, fps=30):
-    """Compile annotated frames into a video file."""
-    # Find all annotated frames
+    """Compile frames into a video file (robust, from compile_videos.py)."""
     frames = sorted(list(frames_dir.glob("*.jpg")) + list(frames_dir.glob("*.png")))
-    
     if not frames:
-        print(f"  WARNING: No frames found in {frames_dir}")
-        return None
-    
-    # Read first frame to get dimensions
+        print(f"  No frames found in {frames_dir.name}")
+        return False
+    print(f"  Found {len(frames)} frames")
     first_frame = cv2.imread(str(frames[0]))
     if first_frame is None:
         print(f"  ERROR: Could not read first frame")
-        return None
-    
+        return False
     height, width = first_frame.shape[:2]
-    
-    # Create video writer
-    video_path = frames_dir.parent / f"{video_name}.mp4"
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter(str(video_path), fourcc, fps, (width, height))
-    
+    out = cv2.VideoWriter(str(video_name), fourcc, fps, (width, height))
     if not out.isOpened():
         print(f"  ERROR: Could not create video writer")
-        return None
-    
-    # Write frames to video
-    for frame_path in frames:
+        return False
+    for i, frame_path in enumerate(frames):
         frame = cv2.imread(str(frame_path))
         if frame is not None:
             out.write(frame)
-    
+        if (i + 1) % 100 == 0:
+            print(f"    Writing frame {i+1}/{len(frames)}...")
     out.release()
-    
-    return video_path
+    print(f"✓ Video saved: {Path(video_name).name}")
+    return True
 
 
 if __name__ == "__main__":

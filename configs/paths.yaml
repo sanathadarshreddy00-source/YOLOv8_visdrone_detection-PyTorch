@@ -1,0 +1,19 @@
+data:
+  images: images1/images
+  annotations: Annotations/_train
+  labels: labels_converted
+  dataset: dataset
+  splits: splits
+
+outputs:
+  predictions: runs/detect/predictions
+  verification: runs/detect/verification
+  videos: runs/detect/videos
+
+logging:
+  logs: logs
+  runs_project: runs/detect
+
+misc:
+  backups: backups
+  temp: tmp

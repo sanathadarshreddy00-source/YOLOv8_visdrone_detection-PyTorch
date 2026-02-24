@@ -18,6 +18,7 @@ import random
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.utils.reproducibility import set_seed
+from src.utils import paths
 
 # Import YOLOv8
 try:
@@ -47,13 +48,13 @@ def main(args):
     if args.weights:
         weights_path = Path(args.weights)
     else:
-        # Find latest run
-        runs_dir = Path(config['logging']['project'])
+        # Find latest run (use centralized runs path)
+        runs_dir = paths.RUNS_PROJECT
         if not runs_dir.exists():
             print(f"ERROR: No training runs found in {runs_dir}")
             print("Run script 04_train.py first!")
             sys.exit(1)
-        
+
         # Get latest experiment
         experiments = sorted(runs_dir.glob("yolov8*"))
         if not experiments:
@@ -143,16 +144,16 @@ def main(args):
     if args.visualize:
         print("\nGenerating prediction visualizations...")
         
-        val_images_dir = Path("dataset/images/val")
+        val_images_dir = paths.DATASET / "images" / "val"
         if not val_images_dir.exists():
             print(f"WARNING: Validation images not found at {val_images_dir}")
             return
-        
+
         val_images = list(val_images_dir.glob("*.jpg"))
         sample_images = random.sample(val_images, min(10, len(val_images)))
-        
-        output_dir = Path("predictions")
-        output_dir.mkdir(exist_ok=True)
+
+        output_dir = paths.PREDICTIONS
+        paths.ensure_dirs(output_dir)
         
         for img_path in sample_images:
             results = model.predict(

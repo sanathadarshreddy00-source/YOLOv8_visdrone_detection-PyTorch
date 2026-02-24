@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.utils.visualization import visualize_annotations
 from src.utils.reproducibility import set_seed
+from src.utils import paths
 
 
 def main():
@@ -35,12 +36,12 @@ def main():
     # Set seed
     set_seed(config['seed'])
     
-    # Paths
-    images_dir = Path("images1/images")
-    visdrone_dir = Path("Annotations/_train")
-    yolo_dir = Path("labels_converted")
-    output_dir = Path("verification_plots")
-    output_dir.mkdir(exist_ok=True)
+    # Paths (centralized)
+    images_dir = paths.IMAGES
+    visdrone_dir = paths.ANNOTATIONS
+    yolo_dir = paths.LABELS
+    output_dir = paths.VERIFICATION
+    paths.ensure_dirs(output_dir)
     
     # Get random sample
     image_files = sorted(images_dir.glob("*.jpg"))

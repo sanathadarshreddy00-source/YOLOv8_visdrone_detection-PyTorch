@@ -23,7 +23,7 @@ deterministic: true
 model:
   # Model size: yolov8n, yolov8s, yolov8m, yolov8l, yolov8x
   # Start with 'n' for quick validation, then 's' for baseline
-  name: "yolov8n"
+  name: "yolov8s"
   pretrained: true
   
 # ============================================================
@@ -45,8 +45,8 @@ training:
   batch: 4  # Batch size for RTX 3060 @ 640px
   
   # Training duration
-  epochs: 50
-  patience: 10  # Early stopping patience
+  epochs: 100
+  patience: 20  # Early stopping patience
   
   # Device
   device: 0  # GPU 0
@@ -77,7 +77,7 @@ optimizer:
 # ============================================================
 augmentation:
   # Geometric
-  hsv_h: 0.015      # HSV-Hue augmentation
+  hsv_h: 0.1      # HSV-Hue augmentation
   hsv_s: 0.7        # HSV-Saturation
   hsv_v: 0.4        # HSV-Value
   degrees: 0.0      # Image rotation (+/- deg)
@@ -90,7 +90,7 @@ augmentation:
   
   # Advanced augmentations for small objects
   mosaic: 1.0       # Mosaic augmentation (critical for small objects)
-  mixup: 0.0        # Mixup augmentation (start with 0, can increase)
+  mixup: 0.24        # Mixup augmentation (start with 0, can increase)
   copy_paste: 0.0   # Copy-paste augmentation (can add later)
   
 # ============================================================

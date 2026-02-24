@@ -1,8 +1,6 @@
 """
 Script 4: Train YOLOv8 model on VisDrone dataset
-
-Usage:
-    python scripts/04_train.py [--model yolov8n] [--epochs 50] [--imgsz 640] [--batch 4]
+]
 """
 import os
 # Fix OpenMP conflict
@@ -19,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.utils.reproducibility import set_seed
 from src.utils.logging import save_experiment_config
+from src.utils import paths
 
 # Import YOLOv8
 try:
@@ -81,8 +80,9 @@ def main(args):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     experiment_name = f"{model_name}_{timestamp}"
     
-    # Save config for this run
-    run_dir = Path(config['logging']['project']) / experiment_name
+    # Save config for this run (use centralized runs path)
+    run_dir = paths.RUNS_PROJECT / experiment_name
+    paths.ensure_dirs(run_dir, paths.LOGS)
     save_experiment_config(config, run_dir)
     
     print(f"\nStarting training...")
@@ -136,7 +136,7 @@ def main(args):
         max_det=config['inference']['max_det'],
         
         # Logging
-        project=config['logging']['project'],
+        project=str(paths.RUNS_PROJECT),
         name=experiment_name,
         exist_ok=config['logging']['exist_ok'],
         plots=False,  # Disable to save RAM during validation

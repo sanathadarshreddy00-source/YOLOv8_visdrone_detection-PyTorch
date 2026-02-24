@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.utils.reproducibility import set_seed
 from src.utils.logging import setup_logger
+from src.utils import paths
 
 
 def main():
@@ -37,10 +38,10 @@ def main():
     logger = setup_logger('prepare', 'logs')
     logger.info("Preparing dataset...")
     
-    # Paths
-    images_dir = Path("images1/images")
-    labels_dir = Path("labels_converted")
-    output_dir = Path("dataset")
+    # Paths (centralized)
+    images_dir = paths.IMAGES
+    labels_dir = paths.LABELS
+    output_dir = paths.DATASET
     
     # Create output structure
     (output_dir / "images" / "train").mkdir(parents=True, exist_ok=True)
@@ -77,7 +78,9 @@ def main():
     print(f"  Validation: {len(val_images)} images ({len(val_images)/len(valid_images)*100:.1f}%)")
     
     # Save split lists for reproducibility
-    split_dir = Path("splits")
+    split_dir = paths.SPLITS
+    # Ensure target dirs exist
+    paths.ensure_dirs(output_dir, split_dir)
     split_dir.mkdir(exist_ok=True)
     
     with open(split_dir / "train_images.txt", 'w') as f:

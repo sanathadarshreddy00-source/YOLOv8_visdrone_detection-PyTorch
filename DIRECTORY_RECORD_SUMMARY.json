@@ -1,0 +1,1508 @@
+[
+  {
+    "path": "DEVELOPER_GUIDE.md",
+    "type": "file",
+    "size_bytes": 1196,
+    "mtime": "2026-02-24T22:52:39.766478"
+  },
+  {
+    "path": "MIGRATION_MANIFEST_20260224_154353.csv",
+    "type": "file",
+    "size_bytes": 6690,
+    "mtime": "2026-02-24T15:43:53.663513"
+  },
+  {
+    "path": "README.md",
+    "type": "file",
+    "size_bytes": 13497,
+    "mtime": "2026-02-24T22:52:31.025794"
+  },
+  {
+    "path": "configs/experiment_config.yaml",
+    "type": "file",
+    "size_bytes": 5558,
+    "mtime": "2026-02-23T16:21:02.876000"
+  },
+  {
+    "path": "configs/paths.yaml",
+    "type": "file",
+    "size_bytes": 355,
+    "mtime": "2026-02-24T16:28:46.539765"
+  },
+  {
+    "path": "configs/visdrone.yaml",
+    "type": "file",
+    "size_bytes": 521,
+    "mtime": "2026-02-13T16:13:00.569233"
+  },
+  {
+    "path": "scripts/__pycache__",
+    "type": "dir",
+    "size_bytes": 4096,
+    "mtime": "2026-02-24T15:15:56.687809"
+  },
+  {
+    "path": "scripts/01_convert_annotations.py",
+    "type": "file",
+    "size_bytes": 3799,
+    "mtime": "2026-02-24T16:28:48.039710"
+  },
+  {
+    "path": "scripts/02_verify_data.py",
+    "type": "file",
+    "size_bytes": 2902,
+    "mtime": "2026-02-24T16:28:48.284488"
+  },
+  {
+    "path": "scripts/03_prepare_dataset.py",
+    "type": "file",
+    "size_bytes": 4300,
+    "mtime": "2026-02-24T15:07:30.795288"
+  },
+  {
+    "path": "scripts/04_train.py",
+    "type": "file",
+    "size_bytes": 6920,
+    "mtime": "2026-02-24T22:35:38.117315"
+  },
+  {
+    "path": "scripts/05_evaluate.py",
+    "type": "file",
+    "size_bytes": 6162,
+    "mtime": "2026-02-24T16:28:49.029389"
+  },
+  {
+    "path": "scripts/06_video_inference.py",
+    "type": "file",
+    "size_bytes": 11105,
+    "mtime": "2026-02-24T17:02:51.497238"
+  },
+  {
+    "path": "scripts/__pycache__/01_convert_annotations.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 3029,
+    "mtime": "2026-02-24T15:15:56.652027"
+  },
+  {
+    "path": "scripts/__pycache__/02_verify_data.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 2543,
+    "mtime": "2026-02-24T15:15:56.652027"
+  },
+  {
+    "path": "scripts/__pycache__/03_prepare_dataset.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 3676,
+    "mtime": "2026-02-24T15:15:56.667710"
+  },
+  {
+    "path": "scripts/__pycache__/04_train.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 5002,
+    "mtime": "2026-02-24T15:15:56.667710"
+  },
+  {
+    "path": "scripts/__pycache__/05_evaluate.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 4709,
+    "mtime": "2026-02-24T15:15:56.667710"
+  },
+  {
+    "path": "scripts/__pycache__/06_video_inference.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 6924,
+    "mtime": "2026-02-24T15:15:56.667710"
+  },
+  {
+    "path": "scripts/__pycache__/compile_videos.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 2715,
+    "mtime": "2026-02-24T15:15:56.686794"
+  },
+  {
+    "path": "src/__pycache__",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-24T15:15:56.690191"
+  },
+  {
+    "path": "src/config",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-23T18:36:07.395212"
+  },
+  {
+    "path": "src/data",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-13T16:10:29.453411"
+  },
+  {
+    "path": "src/utils",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-24T15:03:19.857991"
+  },
+  {
+    "path": "src/__init__.py",
+    "type": "file",
+    "size_bytes": 64,
+    "mtime": "2026-02-13T16:12:57.117085"
+  },
+  {
+    "path": "src/config/__pycache__",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-23T18:35:26.605621"
+  },
+  {
+    "path": "src/config/__pycache__/config_loader.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 5217,
+    "mtime": "2026-02-23T18:35:26.605621"
+  },
+  {
+    "path": "src/data/__pycache__",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-24T15:15:56.700922"
+  },
+  {
+    "path": "src/data/__init__.py",
+    "type": "file",
+    "size_bytes": 106,
+    "mtime": "2026-02-13T16:12:57.681671"
+  },
+  {
+    "path": "src/data/convert.py",
+    "type": "file",
+    "size_bytes": 7519,
+    "mtime": "2026-02-24T16:28:47.239220"
+  },
+  {
+    "path": "src/data/__pycache__/__init__.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 226,
+    "mtime": "2026-02-24T15:15:56.696038"
+  },
+  {
+    "path": "src/data/__pycache__/convert.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 5487,
+    "mtime": "2026-02-24T15:15:56.700593"
+  },
+  {
+    "path": "src/utils/__pycache__",
+    "type": "dir",
+    "size_bytes": 4096,
+    "mtime": "2026-02-24T16:45:10.270322"
+  },
+  {
+    "path": "src/utils/__init__.py",
+    "type": "file",
+    "size_bytes": 189,
+    "mtime": "2026-02-13T16:12:58.186006"
+  },
+  {
+    "path": "src/utils/logging.py",
+    "type": "file",
+    "size_bytes": 2433,
+    "mtime": "2026-02-24T16:28:47.254611"
+  },
+  {
+    "path": "src/utils/paths.py",
+    "type": "file",
+    "size_bytes": 1945,
+    "mtime": "2026-02-24T15:07:32.502878"
+  },
+  {
+    "path": "src/utils/reproducibility.py",
+    "type": "file",
+    "size_bytes": 715,
+    "mtime": "2026-02-13T16:12:59.639228"
+  },
+  {
+    "path": "src/utils/visualization.py",
+    "type": "file",
+    "size_bytes": 5149,
+    "mtime": "2026-02-24T16:28:47.819559"
+  },
+  {
+    "path": "src/utils/__pycache__/__init__.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 309,
+    "mtime": "2026-02-24T15:15:56.703928"
+  },
+  {
+    "path": "src/utils/__pycache__/logging.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 2229,
+    "mtime": "2026-02-24T16:45:10.270322"
+  },
+  {
+    "path": "src/utils/__pycache__/paths.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 1835,
+    "mtime": "2026-02-24T15:15:56.707565"
+  },
+  {
+    "path": "src/utils/__pycache__/reproducibility.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 804,
+    "mtime": "2026-02-24T15:15:56.707565"
+  },
+  {
+    "path": "src/utils/__pycache__/visualization.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 4105,
+    "mtime": "2026-02-24T15:15:56.707565"
+  },
+  {
+    "path": "src/__pycache__/__init__.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 181,
+    "mtime": "2026-02-24T15:15:56.690191"
+  },
+  {
+    "path": "tools/__pycache__",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-24T15:15:56.757994"
+  },
+  {
+    "path": "tools/check_paths.py",
+    "type": "file",
+    "size_bytes": 187,
+    "mtime": "2026-02-24T16:28:46.638311"
+  },
+  {
+    "path": "tools/generate_directory_record.py",
+    "type": "file",
+    "size_bytes": 2085,
+    "mtime": "2026-02-24T16:28:45.896329"
+  },
+  {
+    "path": "tools/purge_zero_byte_files.py",
+    "type": "file",
+    "size_bytes": 2297,
+    "mtime": "2026-02-24T16:28:46.004129"
+  },
+  {
+    "path": "tools/__pycache__/check_paths.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 315,
+    "mtime": "2026-02-24T15:15:56.749261"
+  },
+  {
+    "path": "tools/__pycache__/generate_directory_record.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 1650,
+    "mtime": "2026-02-24T15:15:56.753469"
+  },
+  {
+    "path": "tools/__pycache__/purge_zero_byte_files.cpython-310.pyc",
+    "type": "file",
+    "size_bytes": 1901,
+    "mtime": "2026-02-24T15:15:56.757994"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v.mp4",
+    "type": "file",
+    "size_bytes": 75561583,
+    "mtime": "2026-02-24T22:47:37.086632"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656",
+    "type": "dir",
+    "size_bytes": 0,
+    "mtime": "2026-02-24T22:47:19.668671"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v",
+    "type": "dir",
+    "size_bytes": 49152,
+    "mtime": "2026-02-24T22:47:19.602674"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000233.jpg",
+    "type": "file",
+    "size_bytes": 1008086,
+    "mtime": "2026-02-24T22:47:19.602674"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000232.jpg",
+    "type": "file",
+    "size_bytes": 987067,
+    "mtime": "2026-02-24T22:47:19.530272"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000231.jpg",
+    "type": "file",
+    "size_bytes": 996662,
+    "mtime": "2026-02-24T22:47:19.446347"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000230.jpg",
+    "type": "file",
+    "size_bytes": 994745,
+    "mtime": "2026-02-24T22:47:19.374443"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000229.jpg",
+    "type": "file",
+    "size_bytes": 993399,
+    "mtime": "2026-02-24T22:47:19.293734"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000228.jpg",
+    "type": "file",
+    "size_bytes": 991767,
+    "mtime": "2026-02-24T22:47:19.213749"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000227.jpg",
+    "type": "file",
+    "size_bytes": 989415,
+    "mtime": "2026-02-24T22:47:19.131963"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000226.jpg",
+    "type": "file",
+    "size_bytes": 1014851,
+    "mtime": "2026-02-24T22:47:19.043777"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000225.jpg",
+    "type": "file",
+    "size_bytes": 1024694,
+    "mtime": "2026-02-24T22:47:18.965379"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000224.jpg",
+    "type": "file",
+    "size_bytes": 1002200,
+    "mtime": "2026-02-24T22:47:18.878620"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000223.jpg",
+    "type": "file",
+    "size_bytes": 1000272,
+    "mtime": "2026-02-24T22:47:18.794597"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000222.jpg",
+    "type": "file",
+    "size_bytes": 1014381,
+    "mtime": "2026-02-24T22:47:18.706251"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000221.jpg",
+    "type": "file",
+    "size_bytes": 1032751,
+    "mtime": "2026-02-24T22:47:18.629921"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000220.jpg",
+    "type": "file",
+    "size_bytes": 1071760,
+    "mtime": "2026-02-24T22:47:18.550071"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000219.jpg",
+    "type": "file",
+    "size_bytes": 1084815,
+    "mtime": "2026-02-24T22:47:18.460927"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000218.jpg",
+    "type": "file",
+    "size_bytes": 1060054,
+    "mtime": "2026-02-24T22:47:18.369140"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000217.jpg",
+    "type": "file",
+    "size_bytes": 1095239,
+    "mtime": "2026-02-24T22:47:18.284053"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000216.jpg",
+    "type": "file",
+    "size_bytes": 1065715,
+    "mtime": "2026-02-24T22:47:18.196491"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000215.jpg",
+    "type": "file",
+    "size_bytes": 1016509,
+    "mtime": "2026-02-24T22:47:18.104744"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000214.jpg",
+    "type": "file",
+    "size_bytes": 953519,
+    "mtime": "2026-02-24T22:47:18.028014"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000213.jpg",
+    "type": "file",
+    "size_bytes": 940651,
+    "mtime": "2026-02-24T22:47:17.940805"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000212.jpg",
+    "type": "file",
+    "size_bytes": 903810,
+    "mtime": "2026-02-24T22:47:17.847584"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000211.jpg",
+    "type": "file",
+    "size_bytes": 854392,
+    "mtime": "2026-02-24T22:47:17.766569"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000210.jpg",
+    "type": "file",
+    "size_bytes": 846409,
+    "mtime": "2026-02-24T22:47:17.658449"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000209.jpg",
+    "type": "file",
+    "size_bytes": 846031,
+    "mtime": "2026-02-24T22:47:17.522999"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000208.jpg",
+    "type": "file",
+    "size_bytes": 879349,
+    "mtime": "2026-02-24T22:47:17.429034"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000207.jpg",
+    "type": "file",
+    "size_bytes": 834607,
+    "mtime": "2026-02-24T22:47:17.332158"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000206.jpg",
+    "type": "file",
+    "size_bytes": 897047,
+    "mtime": "2026-02-24T22:47:17.235596"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000205.jpg",
+    "type": "file",
+    "size_bytes": 851235,
+    "mtime": "2026-02-24T22:47:17.129705"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000204.jpg",
+    "type": "file",
+    "size_bytes": 855256,
+    "mtime": "2026-02-24T22:47:17.030354"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000203.jpg",
+    "type": "file",
+    "size_bytes": 796700,
+    "mtime": "2026-02-24T22:47:16.934855"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000202.jpg",
+    "type": "file",
+    "size_bytes": 781618,
+    "mtime": "2026-02-24T22:47:16.836853"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000201.jpg",
+    "type": "file",
+    "size_bytes": 799626,
+    "mtime": "2026-02-24T22:47:16.751693"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000200.jpg",
+    "type": "file",
+    "size_bytes": 832627,
+    "mtime": "2026-02-24T22:47:16.664456"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000199.jpg",
+    "type": "file",
+    "size_bytes": 918186,
+    "mtime": "2026-02-24T22:47:16.565448"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000198.jpg",
+    "type": "file",
+    "size_bytes": 977686,
+    "mtime": "2026-02-24T22:47:16.472987"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000197.jpg",
+    "type": "file",
+    "size_bytes": 965204,
+    "mtime": "2026-02-24T22:47:16.375634"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000196.jpg",
+    "type": "file",
+    "size_bytes": 963972,
+    "mtime": "2026-02-24T22:47:16.284363"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000195.jpg",
+    "type": "file",
+    "size_bytes": 970958,
+    "mtime": "2026-02-24T22:47:16.179563"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000194.jpg",
+    "type": "file",
+    "size_bytes": 945219,
+    "mtime": "2026-02-24T22:47:16.082971"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000193.jpg",
+    "type": "file",
+    "size_bytes": 939403,
+    "mtime": "2026-02-24T22:47:16.001237"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000192.jpg",
+    "type": "file",
+    "size_bytes": 880004,
+    "mtime": "2026-02-24T22:47:15.912107"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000191.jpg",
+    "type": "file",
+    "size_bytes": 846356,
+    "mtime": "2026-02-24T22:47:15.827051"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000190.jpg",
+    "type": "file",
+    "size_bytes": 820498,
+    "mtime": "2026-02-24T22:47:15.735851"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000189.jpg",
+    "type": "file",
+    "size_bytes": 866196,
+    "mtime": "2026-02-24T22:47:15.647366"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000188.jpg",
+    "type": "file",
+    "size_bytes": 817340,
+    "mtime": "2026-02-24T22:47:15.534432"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000187.jpg",
+    "type": "file",
+    "size_bytes": 857403,
+    "mtime": "2026-02-24T22:47:15.453294"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000186.jpg",
+    "type": "file",
+    "size_bytes": 847585,
+    "mtime": "2026-02-24T22:47:15.371782"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000185.jpg",
+    "type": "file",
+    "size_bytes": 881092,
+    "mtime": "2026-02-24T22:47:15.251529"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000184.jpg",
+    "type": "file",
+    "size_bytes": 928629,
+    "mtime": "2026-02-24T22:47:15.162710"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000183.jpg",
+    "type": "file",
+    "size_bytes": 882142,
+    "mtime": "2026-02-24T22:47:15.071555"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000182.jpg",
+    "type": "file",
+    "size_bytes": 881884,
+    "mtime": "2026-02-24T22:47:14.977032"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000181.jpg",
+    "type": "file",
+    "size_bytes": 904903,
+    "mtime": "2026-02-24T22:47:14.890631"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000180.jpg",
+    "type": "file",
+    "size_bytes": 872648,
+    "mtime": "2026-02-24T22:47:14.799576"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000179.jpg",
+    "type": "file",
+    "size_bytes": 901458,
+    "mtime": "2026-02-24T22:47:14.701219"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000178.jpg",
+    "type": "file",
+    "size_bytes": 903555,
+    "mtime": "2026-02-24T22:47:14.617936"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000177.jpg",
+    "type": "file",
+    "size_bytes": 917831,
+    "mtime": "2026-02-24T22:47:14.520777"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000176.jpg",
+    "type": "file",
+    "size_bytes": 868034,
+    "mtime": "2026-02-24T22:47:14.431577"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000175.jpg",
+    "type": "file",
+    "size_bytes": 840022,
+    "mtime": "2026-02-24T22:47:14.333250"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000174.jpg",
+    "type": "file",
+    "size_bytes": 851168,
+    "mtime": "2026-02-24T22:47:14.235954"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000173.jpg",
+    "type": "file",
+    "size_bytes": 907408,
+    "mtime": "2026-02-24T22:47:14.163701"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000172.jpg",
+    "type": "file",
+    "size_bytes": 891251,
+    "mtime": "2026-02-24T22:47:14.065674"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000171.jpg",
+    "type": "file",
+    "size_bytes": 915169,
+    "mtime": "2026-02-24T22:47:13.980656"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000170.jpg",
+    "type": "file",
+    "size_bytes": 958408,
+    "mtime": "2026-02-24T22:47:13.881950"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000169.jpg",
+    "type": "file",
+    "size_bytes": 999244,
+    "mtime": "2026-02-24T22:47:13.792033"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000168.jpg",
+    "type": "file",
+    "size_bytes": 1007539,
+    "mtime": "2026-02-24T22:47:13.691828"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000167.jpg",
+    "type": "file",
+    "size_bytes": 1068967,
+    "mtime": "2026-02-24T22:47:13.588349"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000166.jpg",
+    "type": "file",
+    "size_bytes": 1060722,
+    "mtime": "2026-02-24T22:47:13.476577"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000165.jpg",
+    "type": "file",
+    "size_bytes": 1068746,
+    "mtime": "2026-02-24T22:47:13.349167"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000164.jpg",
+    "type": "file",
+    "size_bytes": 1066252,
+    "mtime": "2026-02-24T22:47:13.252090"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000163.jpg",
+    "type": "file",
+    "size_bytes": 1069904,
+    "mtime": "2026-02-24T22:47:13.100639"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000162.jpg",
+    "type": "file",
+    "size_bytes": 1054880,
+    "mtime": "2026-02-24T22:47:12.986360"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000161.jpg",
+    "type": "file",
+    "size_bytes": 1094826,
+    "mtime": "2026-02-24T22:47:12.897612"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000160.jpg",
+    "type": "file",
+    "size_bytes": 1033393,
+    "mtime": "2026-02-24T22:47:12.789461"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000159.jpg",
+    "type": "file",
+    "size_bytes": 1060268,
+    "mtime": "2026-02-24T22:47:12.687667"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000158.jpg",
+    "type": "file",
+    "size_bytes": 1037338,
+    "mtime": "2026-02-24T22:47:12.598693"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000157.jpg",
+    "type": "file",
+    "size_bytes": 1047058,
+    "mtime": "2026-02-24T22:47:12.501993"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000156.jpg",
+    "type": "file",
+    "size_bytes": 1057308,
+    "mtime": "2026-02-24T22:47:12.397385"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000155.jpg",
+    "type": "file",
+    "size_bytes": 1028807,
+    "mtime": "2026-02-24T22:47:12.284986"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000154.jpg",
+    "type": "file",
+    "size_bytes": 1002620,
+    "mtime": "2026-02-24T22:47:12.187755"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000153.jpg",
+    "type": "file",
+    "size_bytes": 1002059,
+    "mtime": "2026-02-24T22:47:12.099219"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000152.jpg",
+    "type": "file",
+    "size_bytes": 965130,
+    "mtime": "2026-02-24T22:47:12.001539"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000151.jpg",
+    "type": "file",
+    "size_bytes": 965478,
+    "mtime": "2026-02-24T22:47:11.925294"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000150.jpg",
+    "type": "file",
+    "size_bytes": 1012343,
+    "mtime": "2026-02-24T22:47:11.817990"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000149.jpg",
+    "type": "file",
+    "size_bytes": 974032,
+    "mtime": "2026-02-24T22:47:11.724829"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000148.jpg",
+    "type": "file",
+    "size_bytes": 935441,
+    "mtime": "2026-02-24T22:47:11.631989"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000147.jpg",
+    "type": "file",
+    "size_bytes": 983196,
+    "mtime": "2026-02-24T22:47:11.535116"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000146.jpg",
+    "type": "file",
+    "size_bytes": 978618,
+    "mtime": "2026-02-24T22:47:11.437595"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000145.jpg",
+    "type": "file",
+    "size_bytes": 982600,
+    "mtime": "2026-02-24T22:47:11.349360"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000144.jpg",
+    "type": "file",
+    "size_bytes": 997579,
+    "mtime": "2026-02-24T22:47:11.258418"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000143.jpg",
+    "type": "file",
+    "size_bytes": 983519,
+    "mtime": "2026-02-24T22:47:11.168196"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000142.jpg",
+    "type": "file",
+    "size_bytes": 1037484,
+    "mtime": "2026-02-24T22:47:11.086685"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000141.jpg",
+    "type": "file",
+    "size_bytes": 1046984,
+    "mtime": "2026-02-24T22:47:10.993326"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000140.jpg",
+    "type": "file",
+    "size_bytes": 1066682,
+    "mtime": "2026-02-24T22:47:10.900818"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000139.jpg",
+    "type": "file",
+    "size_bytes": 1049877,
+    "mtime": "2026-02-24T22:47:10.785102"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000138.jpg",
+    "type": "file",
+    "size_bytes": 1039242,
+    "mtime": "2026-02-24T22:47:10.687685"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000137.jpg",
+    "type": "file",
+    "size_bytes": 1099555,
+    "mtime": "2026-02-24T22:47:10.600795"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000136.jpg",
+    "type": "file",
+    "size_bytes": 1057894,
+    "mtime": "2026-02-24T22:47:10.489600"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000135.jpg",
+    "type": "file",
+    "size_bytes": 1069477,
+    "mtime": "2026-02-24T22:47:10.372791"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000134.jpg",
+    "type": "file",
+    "size_bytes": 1048284,
+    "mtime": "2026-02-24T22:47:10.274582"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000133.jpg",
+    "type": "file",
+    "size_bytes": 1049955,
+    "mtime": "2026-02-24T22:47:10.179057"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000132.jpg",
+    "type": "file",
+    "size_bytes": 1037568,
+    "mtime": "2026-02-24T22:47:10.073542"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000131.jpg",
+    "type": "file",
+    "size_bytes": 1066221,
+    "mtime": "2026-02-24T22:47:09.978686"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000130.jpg",
+    "type": "file",
+    "size_bytes": 1051219,
+    "mtime": "2026-02-24T22:47:09.880373"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000129.jpg",
+    "type": "file",
+    "size_bytes": 1091207,
+    "mtime": "2026-02-24T22:47:09.783559"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000128.jpg",
+    "type": "file",
+    "size_bytes": 1093229,
+    "mtime": "2026-02-24T22:47:09.666333"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000127.jpg",
+    "type": "file",
+    "size_bytes": 1059454,
+    "mtime": "2026-02-24T22:47:09.544179"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000126.jpg",
+    "type": "file",
+    "size_bytes": 1043225,
+    "mtime": "2026-02-24T22:47:09.456020"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000125.jpg",
+    "type": "file",
+    "size_bytes": 1052777,
+    "mtime": "2026-02-24T22:47:09.362436"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000124.jpg",
+    "type": "file",
+    "size_bytes": 1053597,
+    "mtime": "2026-02-24T22:47:09.247648"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000123.jpg",
+    "type": "file",
+    "size_bytes": 1062696,
+    "mtime": "2026-02-24T22:47:09.132637"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000122.jpg",
+    "type": "file",
+    "size_bytes": 1053815,
+    "mtime": "2026-02-24T22:47:09.035463"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000121.jpg",
+    "type": "file",
+    "size_bytes": 1023897,
+    "mtime": "2026-02-24T22:47:08.937867"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000120.jpg",
+    "type": "file",
+    "size_bytes": 995930,
+    "mtime": "2026-02-24T22:47:08.843911"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000119.jpg",
+    "type": "file",
+    "size_bytes": 967538,
+    "mtime": "2026-02-24T22:47:08.726700"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000118.jpg",
+    "type": "file",
+    "size_bytes": 960673,
+    "mtime": "2026-02-24T22:47:08.615891"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000117.jpg",
+    "type": "file",
+    "size_bytes": 952799,
+    "mtime": "2026-02-24T22:47:08.501862"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000116.jpg",
+    "type": "file",
+    "size_bytes": 950689,
+    "mtime": "2026-02-24T22:47:08.398497"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000115.jpg",
+    "type": "file",
+    "size_bytes": 955986,
+    "mtime": "2026-02-24T22:47:08.300954"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000114.jpg",
+    "type": "file",
+    "size_bytes": 1021728,
+    "mtime": "2026-02-24T22:47:08.204061"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000113.jpg",
+    "type": "file",
+    "size_bytes": 1036205,
+    "mtime": "2026-02-24T22:47:08.099491"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000112.jpg",
+    "type": "file",
+    "size_bytes": 1022239,
+    "mtime": "2026-02-24T22:47:08.012865"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000111.jpg",
+    "type": "file",
+    "size_bytes": 1034043,
+    "mtime": "2026-02-24T22:47:07.913791"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000110.jpg",
+    "type": "file",
+    "size_bytes": 1054974,
+    "mtime": "2026-02-24T22:47:07.820461"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000109.jpg",
+    "type": "file",
+    "size_bytes": 991050,
+    "mtime": "2026-02-24T22:47:07.724914"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000108.jpg",
+    "type": "file",
+    "size_bytes": 1021113,
+    "mtime": "2026-02-24T22:47:07.632697"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000107.jpg",
+    "type": "file",
+    "size_bytes": 1025151,
+    "mtime": "2026-02-24T22:47:07.532304"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000106.jpg",
+    "type": "file",
+    "size_bytes": 993791,
+    "mtime": "2026-02-24T22:47:07.428245"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000105.jpg",
+    "type": "file",
+    "size_bytes": 990082,
+    "mtime": "2026-02-24T22:47:07.329567"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000104.jpg",
+    "type": "file",
+    "size_bytes": 1019520,
+    "mtime": "2026-02-24T22:47:07.231808"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000103.jpg",
+    "type": "file",
+    "size_bytes": 1025646,
+    "mtime": "2026-02-24T22:47:07.132907"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000102.jpg",
+    "type": "file",
+    "size_bytes": 1003782,
+    "mtime": "2026-02-24T22:47:07.035671"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000101.jpg",
+    "type": "file",
+    "size_bytes": 988528,
+    "mtime": "2026-02-24T22:47:06.953894"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000100.jpg",
+    "type": "file",
+    "size_bytes": 981592,
+    "mtime": "2026-02-24T22:47:06.833042"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000099.jpg",
+    "type": "file",
+    "size_bytes": 995620,
+    "mtime": "2026-02-24T22:47:06.732723"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000098.jpg",
+    "type": "file",
+    "size_bytes": 997149,
+    "mtime": "2026-02-24T22:47:06.632866"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000097.jpg",
+    "type": "file",
+    "size_bytes": 988075,
+    "mtime": "2026-02-24T22:47:06.535823"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000096.jpg",
+    "type": "file",
+    "size_bytes": 995672,
+    "mtime": "2026-02-24T22:47:06.447417"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000095.jpg",
+    "type": "file",
+    "size_bytes": 1007701,
+    "mtime": "2026-02-24T22:47:06.352769"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000094.jpg",
+    "type": "file",
+    "size_bytes": 1017226,
+    "mtime": "2026-02-24T22:47:06.252335"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000093.jpg",
+    "type": "file",
+    "size_bytes": 1019364,
+    "mtime": "2026-02-24T22:47:06.152035"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000092.jpg",
+    "type": "file",
+    "size_bytes": 1019611,
+    "mtime": "2026-02-24T22:47:06.067615"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000091.jpg",
+    "type": "file",
+    "size_bytes": 1028614,
+    "mtime": "2026-02-24T22:47:05.963160"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000090.jpg",
+    "type": "file",
+    "size_bytes": 1005510,
+    "mtime": "2026-02-24T22:47:05.878666"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000089.jpg",
+    "type": "file",
+    "size_bytes": 1011240,
+    "mtime": "2026-02-24T22:47:05.785956"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000088.jpg",
+    "type": "file",
+    "size_bytes": 1014504,
+    "mtime": "2026-02-24T22:47:05.697022"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000087.jpg",
+    "type": "file",
+    "size_bytes": 1002443,
+    "mtime": "2026-02-24T22:47:05.600043"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000086.jpg",
+    "type": "file",
+    "size_bytes": 1041579,
+    "mtime": "2026-02-24T22:47:05.525615"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000085.jpg",
+    "type": "file",
+    "size_bytes": 1029882,
+    "mtime": "2026-02-24T22:47:05.431747"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000084.jpg",
+    "type": "file",
+    "size_bytes": 1070423,
+    "mtime": "2026-02-24T22:47:05.334467"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000083.jpg",
+    "type": "file",
+    "size_bytes": 1064187,
+    "mtime": "2026-02-24T22:47:05.237768"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000082.jpg",
+    "type": "file",
+    "size_bytes": 1070819,
+    "mtime": "2026-02-24T22:47:05.144060"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000081.jpg",
+    "type": "file",
+    "size_bytes": 1059744,
+    "mtime": "2026-02-24T22:47:05.036001"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000080.jpg",
+    "type": "file",
+    "size_bytes": 1055371,
+    "mtime": "2026-02-24T22:47:04.950957"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000079.jpg",
+    "type": "file",
+    "size_bytes": 1056891,
+    "mtime": "2026-02-24T22:47:04.850964"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000078.jpg",
+    "type": "file",
+    "size_bytes": 1015368,
+    "mtime": "2026-02-24T22:47:04.751062"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000077.jpg",
+    "type": "file",
+    "size_bytes": 1050731,
+    "mtime": "2026-02-24T22:47:04.653448"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000076.jpg",
+    "type": "file",
+    "size_bytes": 1063035,
+    "mtime": "2026-02-24T22:47:04.550804"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000075.jpg",
+    "type": "file",
+    "size_bytes": 1026945,
+    "mtime": "2026-02-24T22:47:04.431895"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000074.jpg",
+    "type": "file",
+    "size_bytes": 1060848,
+    "mtime": "2026-02-24T22:47:04.336738"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000073.jpg",
+    "type": "file",
+    "size_bytes": 1007001,
+    "mtime": "2026-02-24T22:47:04.237075"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000072.jpg",
+    "type": "file",
+    "size_bytes": 1025955,
+    "mtime": "2026-02-24T22:47:04.143301"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000071.jpg",
+    "type": "file",
+    "size_bytes": 1038468,
+    "mtime": "2026-02-24T22:47:04.056211"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000070.jpg",
+    "type": "file",
+    "size_bytes": 1053414,
+    "mtime": "2026-02-24T22:47:03.961650"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000069.jpg",
+    "type": "file",
+    "size_bytes": 1066820,
+    "mtime": "2026-02-24T22:47:03.881392"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000068.jpg",
+    "type": "file",
+    "size_bytes": 1026195,
+    "mtime": "2026-02-24T22:47:03.784792"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000067.jpg",
+    "type": "file",
+    "size_bytes": 1021923,
+    "mtime": "2026-02-24T22:47:03.701803"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000066.jpg",
+    "type": "file",
+    "size_bytes": 1024122,
+    "mtime": "2026-02-24T22:47:03.623074"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000065.jpg",
+    "type": "file",
+    "size_bytes": 1072499,
+    "mtime": "2026-02-24T22:47:03.543358"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000064.jpg",
+    "type": "file",
+    "size_bytes": 1037550,
+    "mtime": "2026-02-24T22:47:03.449775"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000063.jpg",
+    "type": "file",
+    "size_bytes": 1023623,
+    "mtime": "2026-02-24T22:47:03.363996"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000062.jpg",
+    "type": "file",
+    "size_bytes": 1060678,
+    "mtime": "2026-02-24T22:47:03.279669"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000061.jpg",
+    "type": "file",
+    "size_bytes": 1070490,
+    "mtime": "2026-02-24T22:47:03.191835"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000060.jpg",
+    "type": "file",
+    "size_bytes": 1044388,
+    "mtime": "2026-02-24T22:47:03.099274"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000059.jpg",
+    "type": "file",
+    "size_bytes": 1036418,
+    "mtime": "2026-02-24T22:47:03.009810"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000058.jpg",
+    "type": "file",
+    "size_bytes": 1001924,
+    "mtime": "2026-02-24T22:47:02.908097"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000057.jpg",
+    "type": "file",
+    "size_bytes": 1055061,
+    "mtime": "2026-02-24T22:47:02.819112"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000056.jpg",
+    "type": "file",
+    "size_bytes": 1067139,
+    "mtime": "2026-02-24T22:47:02.731276"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000055.jpg",
+    "type": "file",
+    "size_bytes": 1061257,
+    "mtime": "2026-02-24T22:47:02.642132"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000054.jpg",
+    "type": "file",
+    "size_bytes": 1081439,
+    "mtime": "2026-02-24T22:47:02.549600"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000053.jpg",
+    "type": "file",
+    "size_bytes": 1081519,
+    "mtime": "2026-02-24T22:47:02.450161"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000052.jpg",
+    "type": "file",
+    "size_bytes": 1057952,
+    "mtime": "2026-02-24T22:47:02.365093"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000051.jpg",
+    "type": "file",
+    "size_bytes": 1085666,
+    "mtime": "2026-02-24T22:47:02.267614"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000050.jpg",
+    "type": "file",
+    "size_bytes": 1063709,
+    "mtime": "2026-02-24T22:47:02.165562"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000049.jpg",
+    "type": "file",
+    "size_bytes": 1055991,
+    "mtime": "2026-02-24T22:47:02.083012"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000048.jpg",
+    "type": "file",
+    "size_bytes": 1072009,
+    "mtime": "2026-02-24T22:47:01.995047"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000047.jpg",
+    "type": "file",
+    "size_bytes": 1097340,
+    "mtime": "2026-02-24T22:47:01.917073"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000046.jpg",
+    "type": "file",
+    "size_bytes": 1085931,
+    "mtime": "2026-02-24T22:47:01.810342"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000045.jpg",
+    "type": "file",
+    "size_bytes": 1081450,
+    "mtime": "2026-02-24T22:47:01.722279"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000044.jpg",
+    "type": "file",
+    "size_bytes": 1067398,
+    "mtime": "2026-02-24T22:47:01.638070"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000043.jpg",
+    "type": "file",
+    "size_bytes": 1082409,
+    "mtime": "2026-02-24T22:47:01.546471"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000042.jpg",
+    "type": "file",
+    "size_bytes": 1089761,
+    "mtime": "2026-02-24T22:47:01.448410"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000041.jpg",
+    "type": "file",
+    "size_bytes": 1069185,
+    "mtime": "2026-02-24T22:47:01.335215"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000040.jpg",
+    "type": "file",
+    "size_bytes": 1082222,
+    "mtime": "2026-02-24T22:47:01.247896"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000039.jpg",
+    "type": "file",
+    "size_bytes": 1097091,
+    "mtime": "2026-02-24T22:47:01.155301"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000038.jpg",
+    "type": "file",
+    "size_bytes": 1107761,
+    "mtime": "2026-02-24T22:47:01.066356"
+  },
+  {
+    "path": "runs/detect/videos/demo_20260224_224656/uav0000137_00458_v/0000037.jpg",
+    "type": "file",
+    "size_bytes": 1063209,
+    "mtime": "2026-02-24T22:47:00.979657"
+  }
+]
